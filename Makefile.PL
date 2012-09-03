@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     "Moose" => 0,
     "Moose::Role" => 0,
     "MooseX::Types::Moose" => 0,
-    "Net::Stomp::MooseHelpers::CanConnect" => "1.1",
+    "Net::Stomp::MooseHelpers::CanConnect" => "v1.1.0",
     "Net::Stomp::MooseHelpers::Exceptions" => 0,
     "Net::Stomp::MooseHelpers::ReconnectOnFailure" => 0,
     "StackTrace::Auto" => 0,
@@ -43,7 +43,7 @@ my %WriteMakefileArgs = (
     "bytes" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "1.3",
+  "VERSION" => "1.3.1",
   "test" => {
     "TESTS" => "t/*.t"
   }
