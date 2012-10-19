@@ -1,6 +1,6 @@
 package Net::Stomp::Producer;
 {
-  $Net::Stomp::Producer::VERSION = '1.4';
+  $Net::Stomp::Producer::VERSION = '1.5';
 }
 {
   $Net::Stomp::Producer::DIST = 'Net-Stomp-Producer';
@@ -122,11 +122,11 @@ sub transform {
                 $valid = $transformer->$vmethod($headers,$body);
             } catch { $exception = $_ };
             if (!$valid) {
-                local $@=$exception;
                 Net::Stomp::Producer::Exceptions::Invalid->throw({
                     transformer => $transformer,
                     message_body => $body,
                     message_headers => $headers,
+                    previous_exception => $exception,
                 });
             }
         }
@@ -164,7 +164,6 @@ __PACKAGE__->meta->make_immutable;
 1;
 
 __END__
-
 =pod
 
 =encoding utf-8
@@ -175,7 +174,7 @@ Net::Stomp::Producer - helper object to send messages via Net::Stomp
 
 =head1 VERSION
 
-version 1.4
+version 1.5
 
 =head1 SYNOPSIS
 
@@ -424,3 +423,4 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
