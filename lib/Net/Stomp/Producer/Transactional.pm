@@ -1,5 +1,5 @@
 package Net::Stomp::Producer::Transactional;
-$Net::Stomp::Producer::Transactional::VERSION = '2.001';
+$Net::Stomp::Producer::Transactional::VERSION = '2.002';
 {
   $Net::Stomp::Producer::Transactional::DIST = 'Net-Stomp-Producer';
 }
@@ -137,7 +137,7 @@ Net::Stomp::Producer::Transactional - subclass of Net::Stomp::Producer with tran
 
 =head1 VERSION
 
-version 2.001
+version 2.002
 
 =head1 SYNOPSIS
 

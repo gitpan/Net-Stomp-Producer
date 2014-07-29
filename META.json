@@ -66,6 +66,13 @@
       }
    },
    "release_status" : "stable",
-   "version" : "2.001"
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/dakkar/Net-Stomp-Producer.git",
+         "web" : "https://github.com/dakkar/Net-Stomp-Producer"
+      }
+   },
+   "version" : "2.002"
 }
 
